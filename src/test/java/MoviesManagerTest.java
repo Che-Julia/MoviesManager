@@ -46,10 +46,10 @@ public class MoviesManagerTest {
         manager.add("Film 11");
         manager.add("Film 11");
 
-        int expected = 3;
-        int actual = manager.findLast().length;
+        String[] expected = {"Film 11", "Film 11", "Film 11"};
+        String[] actual = manager.findLast();
 
-        Assertions.assertEquals(expected, actual);
+        Assertions.assertArrayEquals(expected, actual);
 
     }
 
